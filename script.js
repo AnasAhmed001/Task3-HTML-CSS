@@ -11,7 +11,7 @@ function showSlide(n) {
     if (n < 1) { slideIndex = images.length; }
     
     // Set the background image based on the slide index
-    document.querySelector('.banner').style.backgroundImage = `url('${images[slideIndex - 1]}')`;
+    document.querySelector('.banner').style.backgroundImage = url('${images[slideIndex - 1]}');
     
     // Remove 'active' class from all dots and add to the current one
     let dots = document.querySelectorAll('.dot');
@@ -27,5 +27,5 @@ setInterval(() => {
 
 // JavaScript for toggling the menu for nav bar list
 document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('nav').classList.toggle('active'); // Toggle only the nav element
+    document.querySelector('nav').classList.toggle('active'); // Toggle only the nav element
 });
